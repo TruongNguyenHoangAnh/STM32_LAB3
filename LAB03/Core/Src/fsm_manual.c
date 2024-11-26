@@ -112,11 +112,12 @@ void fsm_manual(){
 
 			if(isButtonPressed(2) == 1){
 				TIME_GREEN = TIME_GREEN_tmp;
-				if(TIME_RED_tmp == TIME_GREEN_tmp + TIME_YELLOW_tmp){
+				TIME_RED_tmp = TIME_GREEN_tmp + TIME_YELLOW_tmp;
+//				if(TIME_RED_tmp == TIME_GREEN_tmp + TIME_YELLOW_tmp){
 					TIME_RED = TIME_RED_tmp;
 					TIME_YELLOW = TIME_YELLOW_tmp;
 					TIME_GREEN = TIME_GREEN_tmp;
-				}
+//				}
 				updateBuffer();
 				status = MOD_INIT;
 				status_system = 0;

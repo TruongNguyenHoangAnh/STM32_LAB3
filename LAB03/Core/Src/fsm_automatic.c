@@ -13,6 +13,7 @@ void fsm_automatic()
 	switch (status){
 	case MOD_INIT:
 		status = RED_GREEN;
+		setTimer6(TIME_RED*1000);
 		setTimer2(TIME_GREEN*1000);
 		break;
 	case RED_GREEN:
@@ -20,6 +21,7 @@ void fsm_automatic()
 		setRedAGreenB();
 		if(timer_flag2 == 1){
 			status = RED_YELLOW;
+			setTimer6(TIME_RED*1000);
 			setTimer2(TIME_YELLOW*1000);
 		}
 		break;
@@ -28,6 +30,7 @@ void fsm_automatic()
 		setRedAYellowB();
 		if(timer_flag2 == 1){
 			status = GREEN_RED;
+			setTimer6(TIME_RED*1000);
 			setTimer2(TIME_GREEN*1000);
 		}
 		break;
@@ -36,6 +39,7 @@ void fsm_automatic()
 		setGreenARedB();
 		if(timer_flag2 ==1){
 			status = YELLOW_RED;
+			setTimer6(TIME_RED*1000);
 			setTimer2(TIME_YELLOW*1000);
 		}
 		break;
@@ -44,6 +48,7 @@ void fsm_automatic()
 		setYellowARedB();
 		if(timer_flag2 == 1){
 			status = RED_GREEN;
+			setTimer6(TIME_RED*1000);
 			setTimer2(TIME_GREEN*1000);
 		}
 		break;
