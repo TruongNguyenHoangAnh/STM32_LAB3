@@ -1,0 +1,10 @@
+led7_segment.c:16:6:display7SEG_horizontal	16	static
+led7_segment.c:113:6:display7SEG_vertical	16	static
+led7_segment.c:210:6:update7SEG	16	static
+led7_segment.c:231:6:updateBuffer	4	static
+led7_segment.c:242:6:countdown7SEG	16	static
+led7_segment.c:265:6:led7SEG_YR	8	static
+led7_segment.c:295:6:led7SEG_GR	8	static
+led7_segment.c:324:6:led7SEG_RY	8	static
+led7_segment.c:353:6:led7SEG_RG	8	static
+led7_segment.c:382:6:display7SEG	8	static
