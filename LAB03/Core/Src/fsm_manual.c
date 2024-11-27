@@ -38,6 +38,10 @@ void modifyMode(int temp){
 
 
 void fsm_manual(){
+	  if(timer_flag10 == 1){
+		  toggleLedRed();
+		  setTimer10(1000);
+	  }
 	switch(mode){
 		case MOD_AUTO:
 			fsm_automatic();

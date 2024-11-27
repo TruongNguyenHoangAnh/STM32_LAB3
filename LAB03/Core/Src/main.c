@@ -101,18 +101,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer10(1000); //use to toggle LED_RED
   updateBuffer();
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if(timer_flag10 == 1){
-		  toggleLedRed();
-		  setTimer10(1000);
-	  }
-
 //	  fsm_automatic();
 	  fsm_manual();
 //	  fsm_setting();
